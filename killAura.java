@@ -44,7 +44,7 @@
         boolean within = false;
         int placeholderOne = 0;
         for (int check = damageeDegree; placeholderOne != angle + 1; check++) {
-            if (pluginegrees.get(check) == 361) {
+            if (degrees.get(check) == 361) {
                 check = 0;
             }
             if (degrees.get(check) == playerDegree) {
