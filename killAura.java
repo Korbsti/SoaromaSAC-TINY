@@ -44,10 +44,10 @@
         boolean within = false;
         int placeholderOne = 0;
         for (int check = damageeDegree; placeholderOne != angle + 1; check++) {
-            if (plugin.degrees.get(check) == 361) {
+            if (pluginegrees.get(check) == 361) {
                 check = 0;
             }
-            if (plugin.degrees.get(check) == playerDegree) {
+            if (degrees.get(check) == playerDegree) {
                 within = true;
                 break;
             }
@@ -55,10 +55,10 @@
         }
         int placeholderTwo = 0;
         for (int check = damageeDegree; placeholderTwo != angle + 1; check--) {
-            if (plugin.degrees.get(check) == -1) {
+            if (degrees.get(check) == -1) {
                 check = 360;
             }
-            if (plugin.degrees.get(check) == playerDegree) {
+            if (degrees.get(check) == playerDegree) {
                 within = true;
                 break;
             }
