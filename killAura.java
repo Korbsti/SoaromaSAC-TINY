@@ -1,6 +1,6 @@
-        ArrayList < Integer > degrees = new ArrayList <>();
+        ArrayList < Integer > ddegrees = new ArrayList <>();
         for (int i = -1; i != 362; i++) {
-            degrees.add(i);
+            ddegrees.add(i);
         }
         Integer angle = 40;
         ////
@@ -44,10 +44,10 @@
         boolean within = false;
         int placeholderOne = 0;
         for (int check = damageeDegree; placeholderOne != angle + 1; check++) {
-            if (degrees.get(check) == 361) {
+            if (ddegrees.get(check) == 361) {
                 check = 0;
             }
-            if (degrees.get(check) == playerDegree) {
+            if (ddegrees.get(check) == playerDegree) {
                 within = true;
                 break;
             }
@@ -55,10 +55,10 @@
         }
         int placeholderTwo = 0;
         for (int check = damageeDegree; placeholderTwo != angle + 1; check--) {
-            if (degrees.get(check) == -1) {
+            if (ddegrees.get(check) == -1) {
                 check = 360;
             }
-            if (degrees.get(check) == playerDegree) {
+            if (ddegrees.get(check) == playerDegree) {
                 within = true;
                 break;
             }
