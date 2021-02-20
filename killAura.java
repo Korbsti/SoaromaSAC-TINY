@@ -1,4 +1,4 @@
-        ArrayList < Integer > degrees = new ArrayList < > ();
+        ArrayList < Integer > degrees = new ArrayList <>();
         for (int i = -1; i != 362; i++) {
             degrees.add(i);
         }
